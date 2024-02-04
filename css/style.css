@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins";
+}
+
+body {
+	background-color: #0f0f0f;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+nav {
+	background-color: #0f0f0f;
+	padding: 30px 0px;
+}
+
+.nav-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+.nav-link {
+	margin-right: 27px;
+	font-size: 1.3rem;
+}
+
+.nav-link a {
+	color: white;
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.nav-link a::before {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	width: 0;
+	height: 4px;
+	background-color: #5c05f2;
+	transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+	transform-origin: 0 0;
+}
+
+.nav-link a:hover::before {
+	width: 100%;
+	left: 0;
+}
+
+.logo {
+	font-family: "Silkscreen";
+	color: white;
+	font-size: 1.5rem;
+}
+
+/* Hero */
+.hero {
+	margin-top: 50px;
+}
+
+.hero-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	font-weight: 900;
+}
+
+.hero-content p {
+	font-weight: 500;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+}
+
+.hero-content h1 {
+	font-size: 4.7rem;
+	line-height: 90px;
+}
+
+.highlight {
+	color: #5c05f2;
+}
+
+.hero-btns {
+	margin-top: 30px;
+}
+
+.hero-btns a {
+	font-weight: 500;
+	text-decoration: none;
+	color: white;
+	margin-right: 20px;
+	border: 2.5px solid #5c05f2;
+	padding: 15px 30px;
+	border-radius: 30px;
+	transition: all 0.3s ease-in-out;
+}
+
+.hero-btns a:nth-child(1) {
+	background-color: #5c05f2;
+}
+
+.hero-btns a:nth-child(1):hover {
+	background-color: #5208d1;
+	border: 2.5px solid#5208d1;
+}
+
+.hero-img {
+	scale: 1.1;
+	/* background-color: white;
+	border-radius: 30px; */
+}
+
+.hero-img img {
+	padding: 10px;
+	filter: drop-shadow(7px 7px 2px rgba(0, 0, 0, 0.5));
+}
