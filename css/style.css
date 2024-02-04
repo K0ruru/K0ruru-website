@@ -137,21 +137,22 @@ nav {
 /* About */
 
 .about {
-	margin-top: 30px;
+	margin-top: 100px;
 }
 
 .about-content {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
 .about-img img {
-	transform: scale(0.7);
+	max-width: 500px;
 }
 
 .about-text {
 	color: white;
+	max-width: 500px;
 }
 
 .header {
